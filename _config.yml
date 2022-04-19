@@ -78,50 +78,198 @@ content:
           - 责任：  提出想法，与产品配合产出prd，推动学科团队进行数据标注，协调多端资源进行开发，对于模型关键部分提出方向性建议，负责核心模型部分编码工作。 
           - 成果：  在尝试使用图像切割的方法做习题切割的过程中发现，这需要大量的标注数据，并且有很多样本并没有明显的视觉上的分割。所以，考虑引入多模态的预训练模型，同时考虑视觉和语义信息，借鉴VL-Bert的思路，在只标注10000张试卷的前提下，模型达到了98.3%的准确率。将切割后的习题进行OCR，使用fassis进行向量相似度分析，完成搜索和批改任务，实现10题以内2s批改。搭建起7人的人工智能团队。 
 
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+      - layout: top-left
+        title: 英语作文辅助批改项目
+        # link: github.com/sproogen
         # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          - 背景：  英语作文是英语学习中综合能力的体现，批改的过程中蕴含大量英语学情的信息，老师批改的任务也非常繁重，学生练习成本很高，急需一种工具解放大量的生产力。 
+          - 责任：  提出想法，与产品配合产出prd，协调多个团队的配合与团队内部共同克服项目中的难题。
+          - 成果：  我们将整个任务拆分为两个阶段，纠错和错误分类。纠错使用NMT模型，将错误的语句翻译成正确的语句，再将正确和错误语句对放进行错误分类。批改任务中要大量的纠正错误的样本以及相应的分类，对此我们做了两个工作。第一，将老师使用的app设计成一个标注的工具，可以将老师的批改直接转化为样本；第二：使用其他语言模型对互联网上的预料进行数据增强，大大减少训练中需要标注的数据量。  
+
+      - layout: top-left
+        title: 人脸识别项目
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          - 背景：  为了提高产品的智能化感知，方便学生和老师进行登录，使用人脸识别代替密码输入。 
+          - 责任：  设计整体技术架构，与产品配合产出prd，协调多团队配合，模型编码并提供接口，搭建人工智能团队。 
+          - 成果： 基于大数据基础设施，完成大数据设施与深度学习之间训练部署的整体pipeline，设计人脸识别整体技术框架 ，使用retinaface作为检测模型，facenet作为representation模型，并对实际环境中的图像质量、光线问题、背景问题、遮挡、眼镜、帽子以及孩子成长面部变化、活体等问题进行处理，端侧推理部署和优化，服务器推理优化。 
+
+      - layout: top-left
+        title: 推荐系统
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          - 背景：  给学生推荐习题、PPT、视频等资源。 
+          - 成果：  从0到1搭建起推荐系统，为了解决召回习题与用户当前学习进度、知识点掌握情况，使用当前进度与掌握弱的知识点，在知识图谱上下游作等规则性条件作为为召回条件；并引入DKT作为学生特征，使用Wide & deep + attention的模型进行精排，解决了根据学生当前学习状态最想看到哪些内容的问题。搭建起大数据8人的团队。 
+  
+      - layout: top-left
+        title: 知识图谱 
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          - 背景：  在教育的各种场景中，例如学生学习路径规划、人机对话、推荐系统等，都会使用到知识图谱。 
+          - 成果：  从0到1搭建起知识图谱的搭建流程，建立起ontology设计->实体抽取->实体连接->实体消歧(实体统一)->neo4j->serving流程，方便各个业务端进行调用。 
+
+      - layout: top-left
+        title: 知识追踪(DKT) 
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          - 背景：  为了能够量化用户对知识点、习题的掌握情况，需要对他们之间的关系进行建模。 
+          - 成果：  使用FM对用户答题数据、知识点、答题结果组合成的矩阵进行分解，生成用户、知识点、习题在统一向量空间的embedding，通过距离计算出学生对于知识点、习题的掌握情况。 
+
+      - layout: top-left
+        title: 大数据基础平台
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          - 成果：  使用logstash、canal、kafka、spark、hadoop等，搭建起lambda架构的大数据平台，支撑公司的批量和准实时计算业务需求，提供给各个业务进行数据分析和处理的能力。
+
+      - layout: top-left
+        title: 手机百度助手游戏推荐项目
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          为百度手机助手游戏栏目提供推荐信息，主要负责使用 MR 进行数据清理、规范化、特征工程等工作，并与产品经理沟通，使用 CF 完成推荐算法。
+
+      - layout: top-left
+        title: 百度钱包支付后端
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          使用 C++ 完成百度钱包后端开发和维护工作，平台日活 3000w+，用户量 2.7 亿。   
 
   - title: 工作履历 # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
+        title: 开课吧
+        link: https://www.kaikeba.com/
         # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        sub_title: 大数据人工智能资深算法讲师/Team Leader
+        caption: 2020.08 - 现在
         quote: >
           Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
             Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
-
+      - layout: left
+        title: 新东方
+        link: http://www.xdf.cn/
+        # link_text: boringcompany.com
+        sub_title: 人工智能部门主管/大数据部门主管
+        caption: 2016.03 - 2020.08
+        quote: >
+          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+      - layout: left
+        title: 百度
+        link: https://www.baidu.com/
+        # link_text: boringcompany.com
+        sub_title: 高级大数据算法工程师
+        caption: 2013.09 - 2016.03
+        quote: >
+          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+      
   - title: 教育经历 # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+        title: 清华大学
+        caption: 2020 - 2022
+        sub_title: 工程管理（自动化）硕士
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        # description: | # this will include new lines to allow paragraphs
+        #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+        #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        title: 河北经贸大学
+        caption: 2009 - 2013
+        sub_title: 计算机科学与技术
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        # description: | # this will include new lines to allow paragraphs
+        #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
 
+        #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
   - title: 更多关于我
     layout: text
     content: | # this will include new lines to allow paragraphs
