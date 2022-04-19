@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: 张春阳
-title: 大数据人工智能资深算法工程师/讲师/Team Leader
+title: 大数据人工智能资深算法工程师/Team Leader/讲师
 email: zhangchunyang_pri@126.com
 website: https://bslience.github.io/
 
@@ -48,14 +48,35 @@ additional_links:
 about_title: 关于我
 about_profile_image: images/profile.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, 我是张春阳，一名大数据人工智能资深算法工程师（8年）， 大数据人工智能 Team Leader（4年），同时也是一名资深人工智能讲师（2年）。
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  - 通过上面这几个简单点标签可以看出来，我的主要技术栈是人工智能算法和大数据技术；
+  - 同时也由于较好的沟通协调能力和管理学的教育背景，让我走向了管理的岗位；
+  - 为了锻炼自身演讲和销售能力，在2020之后也担任大数据人工智能讲师和直播授课的工作。
+
 
 content:
   - title: 项目经验 # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      - layout: top-middle
+        title: 野卷子批改项目
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          背景：  在拍照搜题逐渐成为学生常用的学习辅助工具的趋势下，有越来越多的老师、学生、家长，希望对于没有特点格式的多个习题，也能够正确的识别，并且能够正确的作答和批改。这在教育场景中的数字化建设，老师批改，学生练习，家长辅导孩子的场景中，都有着非常重要的意义。 
+          责任：  提出想法，与产品配合产出prd，推动学科团队进行数据标注，协调多端资源进行开发，对于模型关键部分提出方向性建议，负责核心模型部分编码工作。 
+          成果：  在尝试使用图像切割的方法做习题切割的过程中发现，这需要大量的标注数据，并且有很多样本并没有明显的视觉上的分割。所以，考虑引入多模态的预训练模型，同时考虑视觉和语义信息，借鉴VL-Bert的思路，在只标注10000张试卷的前提下，模型达到了98.3%的准确率。将切割后的习题进行OCR，使用fassis进行向量相似度分析，完成搜索和批改任务，实现10题以内2s批改。搭建起7人的人工智能团队。 
+
       - layout: top-middle
         title: Super awesome project
         link: github.com/sproogen
@@ -86,7 +107,7 @@ content:
         description: | # this will include new lines to allow paragraphs
             Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
 
-  - title: Education # Title for the section
+  - title: 教育经历 # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
@@ -100,7 +121,7 @@ content:
 
           I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-  - title: A Little More About Me
+  - title: 更多关于我
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
@@ -110,7 +131,7 @@ content:
       - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
       Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      ![Trees](images/landscape-trees.jpg "Trees")
 
 # Footer
 footer_show_references: true
